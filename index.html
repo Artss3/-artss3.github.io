@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Agendamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Barbearia do Baixinho</h1>
+        <p>Sua barbearia de confiança</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#agendar">Agendar</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo</h2>
+            <p>A Barbearia do Baixinho oferece os melhores serviços de corte e cuidados pessoais para homens.</p>
+            <p>Venha nos visitar e experimente a qualidade de nosso atendimento.</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>
+                    <h3>Corte de Cabelo</h3>
+                    <p>Corte moderno com tesoura ou máquina</p>
+                    <p>Preço: R$ 35,00</p>
+                </li>
+                <li>
+                    <h3>Barba</h3>
+                    <p>Modelagem e corte de barba</p>
+                    <p>Preço: R$ 25,00</p>
+                </li>
+                <li>
+                    <h3>Corte + Barba</h3>
+                    <p>Combo completo para deixar você impecável</p>
+                    <p>Preço: R$ 60,00</p>
+                </li>
+                <li>
+                    <h3>Corte +Luzes</h3>
+                    <p>Aplicação de luzes para destacar o cabelo</p>
+                    <p>Preço: R$ 90,00</p>
+                </li>
+                <li>
+                    <h3>Sobrancelha</h3>
+                    <p>Design de sobrancelha com navalha</p>
+                    <p>Preço: R$ 10,00</p>
+                </li>
+                <li>
+                    <h3>Tingimento</h3>
+                    <p>Tingimento de cabelo ou barba</p>
+                    <p>Preço: R$ 30,00</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="agendar">
+            <h2>Agendar Horário</h2>
+            <form method="POST" action="#envio">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Agendamento</legend>
+                    
+                    <label for="servico">Selecione o Serviço:</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">-- Escolha um serviço --</option>
+                        <option value="corte">Corte de Cabelo</option>
+                        <option value="barba">Barba</option>
+                        <option value="combo">Corte + Barba</option>
+                        <option value="luzes">Corte + Luzes</option>
+                        <option value="sobrancelha">Sobrancelha</option>
+                        <option value="tingimento">Tingimento</option>
+                    </select>
+                    
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required>
+                    
+                    <label for="hora">Horário:</label>
+                    <input type="time" id="hora" name="hora" required>
+                    
+                    <label for="barbeiro">Profissional de Preferência:</label>
+                    <select id="barbeiro" name="barbeiro">
+                        <option value="">-- Qualquer um --</option>
+                        <option value="baixinho">Baixinho</option>
+                        <option value="arthur">Arthur</option>
+                        <option value="lucas">Lucas</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Observações</legend>
+                    
+                    <label for="observacoes">Observações Adicionais:</label>
+                    <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+                </fieldset>
+
+                <button type="submit">Agendar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <h3>Endereço</h3>
+            <p>Avenida Luis Pires de Minas, 31<br>
+               São Paulo - SP<br>
+               CEP: 03933-070</p>
+            
+            <h3>Telefone</h3>
+            <p><a href="tel:+5511949400878">(11) 9494-00878</a></p>
+            
+            <h3>Email</h3>
+            <p><a href="mailto:contato@barbeariadobaixinho.com">contato@barbeariadobaixinho.com</a></p>
+            
+            <h3>Horário de Funcionamento</h3>
+            <ul>
+                <li>Segunda a Sexta: 09:00 - 19:00</li>
+                <li>Sábado: 08:30 - 18:30</li>
+                <li>Domingo: Fechado</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Barbearia do Baixinho. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ❤️ para melhorar seu visual</p>
+    </footer>
+</body>
+</html>
