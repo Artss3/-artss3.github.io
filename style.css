@@ -1,0 +1,272 @@
+/* Reset e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 4px solid #d4af37;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Navegação */
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Main */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Seções */
+section {
+    background-color: #fff;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #1a1a1a;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #d4af37;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: #d4af37;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Lista de serviços */
+#servicos ul {
+    list-style: none;
+}
+
+#servicos ul li {
+    background-color: #f9f9f9;
+    margin: 15px 0;
+    padding: 15px;
+    border-left: 4px solid #d4af37;
+    border-radius: 4px;
+}
+
+#servicos ul li h3 {
+    margin-top: 0;
+}
+
+#servicos ul li p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+/* Formulário */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+fieldset {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #1a1a1a;
+    padding: 0 10px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    background-color: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Botões */
+button {
+    background-color: #d4af37;
+    color: #1a1a1a;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #c89f2e;
+    transform: scale(1.05);
+}
+
+button[type="reset"] {
+    background-color: #666;
+    color: #fff;
+}
+
+button[type="reset"]:hover {
+    background-color: #555;
+}
+
+/* Seção de Contato */
+#contato h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#contato ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#contato ul li {
+    padding: 8px 0;
+}
+
+#contato a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contato a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 4px solid #d4af37;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
